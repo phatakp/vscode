@@ -1,0 +1,32 @@
+{
+"React Query":{
+		"prefix": "uq",
+		"body":[
+			"const {data,isLoading} = useQuery(",
+			"{queryKey:[$1],",
+			"queryFn: ()=>{}",
+			"});"
+		]
+	},
+	"React Query Mutation":{
+		"prefix": "um",
+		"body":[
+			"const $1Mutation = useMutation(",
+			"{mutationFn:$1,",
+			"onSuccess: ()=>{},",
+			"onError: ()=>{}",
+			"});",
+
+		]
+	},
+	"React Function Component with Props":{
+		"prefix": "rfpc",
+		"body": [
+			"type $1Props = {}",
+			"",
+			"export function $1 ({}: $1Props){",
+			"return $2;",
+			"};"
+		]
+	}
+}
